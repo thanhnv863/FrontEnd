@@ -1,0 +1,148 @@
+<div class="wrapper">
+  <div class="content-page">
+    <header class="header" ng-include="'layout/customer/header.html'"></header>
+    <section>
+      <div class="container-fluid">
+        <!-- start page title -->
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title-box">
+              <h4 class="page-title">Giỏ Hàng</h4>
+            </div>
+          </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="table-responsive">
+                      <div
+                        class="row mb-4 d-flex justify-content-between align-items-center"
+                        ng-repeat="sp in listProductCart"
+                      >
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                          <input
+                            ng-model="sp.chon"
+                            type="checkbox"
+                            name=""
+                            id=""
+                          />
+
+                          <img
+                            src="/assets/images/products/{{sp.image}}"
+                            class="img-fluid rounded-3"
+                            alt=""
+                            width="100px"
+                            height="100px"
+                          />
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                          <h6 class="text-muted">{{sp.description}}</h6>
+                          <h6 class="text-black mb-0">{{sp.name}}</h6>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 d-flex">
+                          <input
+                            id="form1"
+                            min="1"
+                            name="soLuong"
+                            value="1"
+                            ng-model="sp.soLuong"
+                            type="number"
+                            class="form-control form-control-sm"
+                          />
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2">
+                          <h6 class="mb-0">{{sp.price| currency:"":0}} VND</h6>
+                        </div>
+                        <div class="col-md-2 col-lg-1 col-xl-1 text-end">
+                          <button
+                            type="button"
+                            ng-click="deleteCart($event,$index)"
+                          >
+                            <i
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-trash3"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                                />
+                              </svg>
+                            </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end table-responsive-->
+                    <!-- action buttons-->
+                    <div class="row mt-4">
+                      <div class="col-sm-4">
+                        <a
+                          href="#home"
+                          class="btn text-muted d-none d-sm-inline-block btn-link font-weight-semibold"
+                        >
+                          <i class="mdi mdi-arrow-left"></i> Continue Shopping
+                        </a>
+                      </div>
+                      <!-- end col -->
+                      <div class="col-sm-4">
+                        <div class="text-sm-right">
+                          <a href="#products" class="btn btn-success">
+                            <i class="mdi mdi-cart-plus mr-1"></i> Thêm sản phẩm
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="text-sm-right">
+                          <a href="#products-da-mua" class="btn btn-success">
+                            <i></i> Sản phẩm đã mua
+                          </a>
+                        </div>
+                      </div>
+                      <!-- end col -->
+                    </div>
+                    <!-- end row-->
+                  </div>
+                  <!-- end col -->
+
+                  <div class="col-lg-4">
+                    <div class="border p-3 mt-4 mt-lg-0 rounded">
+                      <h4 class="header-title mb-3">Đơn Hàng</h4>
+
+                      <div class="table-responsive">
+                        <table class="table mb-0">
+                          <tbody>
+                            <tr>
+                              <td>Tổng Tiền:</td>
+                              <td>{{tongGia()| currency:"":0}}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- end table-responsive -->
+                    </div>
+                  </div>
+                  <!-- end col -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- end card-body-->
+            </div>
+            <!-- end card-->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+    </section>
+    <footer class="footer" ng-include="'layout/customer/footer.html'"></footer>
+  </div>
+</div>

@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Clothes đá bóng",
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 1
+      },
+      "price": 10000,
+      "quantity": 100,
+      "description": "Best seler",
+      "image": "2.jpg"
+    },
+    {
+      "image": "2.jpg",
+      "name": "Clothes đá bóng",
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 1
+      },
+      "price": 20000,
+      "quantity": 100,
+      "description": "Best seler",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Clothes đá bóng",
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 1
+      },
+      "price": 200000,
+      "quantity": 111,
+      "description": "Best seler",
+      "image": "2.jpg"
+    },
+    {
+      "image": "2.jpg",
+      "name": "Clothes đá bóng",
+      "category": {
+        "name": "Trái cây",
+        "id": 1
+      },
+      "price": 25000,
+      "quantity": 123,
+      "description": "Best seler",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Clothes đá bóng",
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 1
+      },
+      "price": 500000,
+      "quantity": 5,
+      "description": "Best seler",
+      "image": "mango.png"
+    },
+    {
+      "id": 6,
+      "name": "Clothes đá bóng",
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 2
+      },
+      "price": 20000,
+      "quantity": 5,
+      "description": "Best seler",
+      "image": "6.jpg"
+    },
+    {
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 2
+      },
+      "name": "Clothes đá bóng",
+      "price": 20000,
+      "quantity": 5,
+      "description": "Best seler",
+      "image": "4.jpg",
+      "id": 7
+    },
+    {
+      "category": {
+        "name": "Singapore",
+        "id": 2
+      },
+      "name": "Clothes đá bóng",
+      "price": 20000,
+      "quantity": 5,
+      "description": "Best seler",
+      "image": "5.jpg",
+      "id": 8
+    },
+    {
+      "category": {
+        "name": "Singapore",
+        "id": 2
+      },
+      "name": "Clothes đá bóng",
+      "price": 20000,
+      "quantity": 5,
+      "description": "New",
+      "image": "4.jpg",
+      "id": 9
+    },
+    {
+      "category": {
+        "name": "Singapore",
+        "id": 2
+      },
+      "name": "Clothes đá bóng",
+      "price": 20000,
+      "quantity": 5,
+      "description": "New",
+      "image": "5.jpg",
+      "id": 10
+    },
+    {
+      "name": "Áo gió",
+      "category": {
+        "name": "Áo gió",
+        "id": 3
+      },
+      "price": 2000000,
+      "quantity": 10000,
+      "description": "Quá xinh đẹp",
+      "image": "ao1.jpg",
+      "id": 13
+    }
+  ],
+  "categories": [
+    {
+      "name": "Ngoại Hạng Anh",
+      "id": 1
+    },
+    {
+      "name": "Singapore",
+      "id": 2
+    },
+    {
+      "name": "Áo gió",
+      "id": 3
+    },
+    {
+      "name": "Áo mưa",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "firstName": "Thành",
+      "lastName": "Nè",
+      "email": "Thanhnvph20218@gmail.com",
+      "password": "123",
+      "role": 1
+    },
+    {
+      "config": false,
+      "role": 2,
+      "firstName": "Hhi",
+      "lastName": "HIHI",
+      "email": "thanhhihi123@gmail.com",
+      "password": "122",
+      "id": "9l2hsah"
+    },
+    {
+      "config": false,
+      "role": 2,
+      "firstName": "Thanh",
+      "lastName": "Nguyen Văn",
+      "email": "thanhHI1@gmail.com",
+      "password": "123",
+      "id": "eHs6ONZ"
+    },
+    {
+      "role": 2,
+      "firstName": "Nhung",
+      "lastName": "Tạ",
+      "email": "nhung1307204@gmail.com",
+      "password": "123",
+      "id": "p0eNye-"
+    }
+  ],
+  "cart": [
+    {
+      "id": 5,
+      "name": "Clothes đá bóng",
+      "price": 500000,
+      "soLuong": 1,
+      "description": "Best seler",
+      "image": "mango.png",
+      "category": {
+        "name": "Ngoại Hạng Anh",
+        "id": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+<div id="signUpGiaoDien" class="container">
+  <h4 class="mt-0">Free Sign Up</h4>
+  <p class="text-muted mb-4">Đăng kí tài khoản ngay!</p>
+
+  <!-- form -->
+  <form action="#">
+    <div class="form-group">
+      <label for="fullname">Frist Name</label>
+      <input
+        class="form-control"
+        type="text"
+        id="firstName"
+        placeholder="Nhập firstName"
+        ng-model="user.firstName"
+      />
+      <span
+        ng-model="error.firstName"
+        class="message-error"
+        ng-show="error.firstName"
+      ></span>
+    </div>
+    <div class="form-group">
+      <label for="fullname">Last Name</label>
+      <input
+        class="form-control"
+        type="text"
+        id="lastName"
+        placeholder="Nhập lastName"
+        ng-model="user.lastName"
+      />
+      <span
+        ng-model="error.lastName"
+        class="message-error"
+        ng-show="error.lastName"
+      ></span>
+    </div>
+    <div class="form-group">
+      <label for="emailaddress">Email address</label>
+      <input
+        class="form-control"
+        type="email"
+        id="emailAddress"
+        placeholder="Nhập địa chỉ email"
+        ng-model="user.email"
+      />
+      <span ng-model="error.email" class="message-error"></span>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        class="form-control"
+        type="password"
+        id="password"
+        placeholder="Nhập password"
+        ng-model="user.password"
+      />
+      <span ng-model="error.password" class="message-error"></span>
+    </div>
+    <div ng-hide="true" class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        id="role"
+        placeholder="Nhập password"
+        ng-model="user.role"
+        ng-bind="user.role = 2"
+      />
+    </div>
+    <div class="form-group">
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="checkbox-signup"
+        />
+        <label class="custom-control-label" for="checkbox-signup"
+          >I accept
+          <a href="javascript: void(0);" class="text-muted"
+            >Terms and Conditions</a
+          ></label
+        >
+      </div>
+    </div>
+    <div class="form-group mb-0 text-center">
+      <button
+        class="btn btn-primary btn-block"
+        type="submit"
+        ng-click="signUp($event);"
+      >
+        <i class="mdi mdi-account-circle"></i> Sign Up
+      </button>
+    </div>
+    <!-- social-->
+    <div class="text-center mt-4">
+      <p class="text-muted font-16">Sign up using</p>
+      <ul class="social-list list-inline mt-3">
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-primary text-primary"
+            ><i class="mdi mdi-facebook"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-danger text-danger"
+            ><i class="mdi mdi-google"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-info text-info"
+            ><i class="mdi mdi-twitter"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-secondary text-secondary"
+            ><i class="mdi mdi-github-circle"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </form>
+  <p class="text-muted">
+    Already have account?
+    <a href="#login" class="text-muted ml-1"><b>Log In</b></a>
+  </p>
+</div>

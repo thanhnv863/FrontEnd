@@ -1,0 +1,87 @@
+<div class="wrapper">
+  <div class="content-page">
+    <header class="header" ng-include="'layout/customer/header.html'"></header>
+    <section>
+      <div class="container-fluid">
+        <!-- start page title -->
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title-box">
+              <h4 class="page-title">Giỏ Hàng Đã Mua</h4>
+            </div>
+          </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="table-responsive">
+                      <table class="table table-success table-striped">
+                        <th>Tên</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng Tiền</th>
+                      </table>
+                    </div>
+                    <!-- end table-responsive-->
+                    <!-- action buttons-->
+                    <div class="row mt-4">
+                      <div class="col-sm-6">
+                        <a
+                          href="#home"
+                          class="btn text-muted d-none d-sm-inline-block btn-link font-weight-semibold"
+                        >
+                          <i class="mdi mdi-arrow-left"></i> Continue Shopping
+                        </a>
+                      </div>
+                      <!-- end col -->
+                      <div class="col-sm-6">
+                        <div class="text-sm-right">
+                          <a href="#cart" class="btn btn-success">
+                            <i class="mdi mdi-cart-plus mr-1"></i>Giỏ hàng
+                          </a>
+                        </div>
+                      </div>
+                      <!-- end col -->
+                    </div>
+                    <!-- end row-->
+                  </div>
+                  <!-- end col -->
+
+                  <div class="col-lg-4">
+                    <div class="border p-3 mt-4 mt-lg-0 rounded">
+                      <h4 class="header-title mb-3">Đơn Hàng</h4>
+
+                      <div class="table-responsive">
+                        <table class="table mb-0">
+                          <tbody>
+                            <tr>
+                              <td>Tổng Tiền:</td>
+                              <td>$00.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- end table-responsive -->
+                    </div>
+                  </div>
+                  <!-- end col -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- end card-body-->
+            </div>
+            <!-- end card-->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+    </section>
+    <footer class="footer" ng-include="'layout/customer/footer.html'"></footer>
+  </div>
+</div>

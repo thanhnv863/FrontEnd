@@ -1,0 +1,112 @@
+<div id="giaoDienLogin" class="container">
+  <div class="container text-center">
+    <h2 class="mt-0">Sign In</h2>
+  </div>
+  <p class="text-muted mb-4">
+    Vui lòng nhập email và password và để đăng nhập!
+  </p>
+
+  <!-- form -->
+  <div class="alert-box">
+    <div
+      class="alert alert-danger alert-dismissible"
+      ng-show="showAlertError"
+      role="alert"
+    >
+      {{alert.errorMessage}}
+    </div>
+  </div>
+  <!-- form -->
+  <form action="#">
+    <div class="form-group">
+      <label for="emailaddress">Địa chỉ email</label>
+      <input
+        class="form-control"
+        type="text"
+        id="emailaddress"
+        required=""
+        placeholder="Vui lòng nhập email"
+        ng-model="user.email"
+      />
+      <div class="alertLogin" ng-show="showAlertEmail" role="alert">
+        {{alert.email}}
+      </div>
+    </div>
+    <div class="form-group">
+      <a href="#fogot-passWord" class="text-muted float-right"
+        ><small>Forgot your password?</small></a
+      >
+      <label for="password">Password</label>
+      <input
+        class="form-control"
+        type="password"
+        required=""
+        id="password"
+        placeholder="Vui lòng nhập password"
+        ng-model="user.password"
+      />
+      <div class="alertLogin" ng-show="showAlertPass" role="alert">
+        {{alert.password}}
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="checkbox-signin"
+        />
+        <label class="custom-control-label" for="checkbox-signin"
+          >Remember me</label
+        >
+      </div>
+    </div>
+    <div class="form-group mb-0 text-center">
+      <button
+        class="btn btn-primary btn-block"
+        type="submit"
+        ng-click="verify_user($event)"
+      >
+        <i class="mdi mdi-login"></i> Log In
+      </button>
+    </div>
+    <!-- social-->
+    <div class="text-center mt-4">
+      <p class="text-muted font-16">Sign in with</p>
+      <ul class="social-list list-inline mt-3">
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-primary text-primary"
+            ><i class="mdi mdi-facebook"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-danger text-danger"
+            ><i class="mdi mdi-google"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-info text-info"
+            ><i class="mdi mdi-twitter"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="javascript: void(0);"
+            class="social-list-item border-secondary text-secondary"
+            ><i class="mdi mdi-github-circle"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </form>
+  <p class="text-muted">
+    Don't have an account?
+    <a href="#sign-up" class="text-muted ml-1"><b>Sign Up</b></a>
+  </p>
+</div>

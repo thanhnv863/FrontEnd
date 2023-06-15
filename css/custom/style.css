@@ -1,0 +1,222 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.header {
+  margin-bottom: 50px;
+}
+#gioHang i {
+  color: #f0d43a;
+}
+#chuDangNhap {
+  margin-top: 25px;
+  color: darkcyan;
+}
+#chuDangNhap i {
+  color: darkcyan;
+}
+.custom_nav-container {
+  padding: 0;
+}
+.navbar-brand {
+  color: aquamarine;
+  font-weight: bold;
+}
+#dangNhap {
+  font-weight: bold;
+}
+.nav-link {
+  margin-top: 10px;
+}
+#dangKy {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.custom_nav-container .navbar-nav {
+  /* margin-left: 140px; */
+  margin: 0 auto;
+}
+.nav-item a:hover {
+  text-shadow: 5px 5px 10px red;
+  font-weight: bold;
+  font-style: oblique;
+}
+/* body */
+#doiMatKhau {
+  color: #000000;
+}
+#detailProduct {
+  color: #000000;
+}
+#btnAddToCart {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.content-title h3 {
+  color: #000000;
+  font-style: initial;
+}
+h6 {
+  font-size: 1em;
+  font-weight: 700px;
+}
+.card {
+  max-width: 100%;
+}
+
+.card .card-img-top {
+  margin: 0 auto;
+}
+.card .card-image-custom {
+  width: 60%;
+}
+
+.card-text {
+  padding-bottom: 20px;
+}
+.card .card-body .card-title-box {
+  color: #b4b4b4;
+  padding: 0 5px;
+}
+
+/* product page */
+.main-content {
+  padding: 0;
+  margin: 0;
+}
+
+.main-content .left-content {
+  padding-left: 0;
+}
+.body-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.box {
+  background-color: #fff;
+  position: relative;
+  padding: 10px 15px;
+  margin-top: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.box a {
+  color: #000000;
+  text-decoration: none;
+}
+.box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 30px;
+  height: 245px;
+}
+.img-box img {
+  max-width: 100%;
+  /* max-height: 175px; */
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.box .detail-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.box .new {
+  padding: 7px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f0d43a;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+#giaoDienLogin {
+  background-color: cornsilk;
+}
+#signUpGiaoDien {
+  color: white;
+  background-color: rgb(34, 34, 34);
+}
+#menuNgang {
+  background-color: aquamarine;
+  color: #000000;
+  font-weight: bold;
+}
+#adminNe {
+  margin-left: 40px;
+}
+#buttonAddCategories {
+  right: 20px;
+}
+#chinh {
+  margin-left: 250px;
+  width: 1000px;
+}
+#changePass {
+  margin-left: 250px;
+  width: 1000px;
+}
+#form-category {
+  margin-left: 250px;
+  width: 1000px;
+}
+#form-product {
+  margin-top: 50px;
+  margin-left: 250px;
+  width: 1000px;
+}
+#productDetail {
+  margin-left: 250px;
+  width: 1000px;
+}
+#product {
+  margin-left: 250px;
+  width: 1000px;
+}
+/* cart */
+/*  */
+#fogotPassword {
+  width: 50%;
+  height: 300px;
+  background-color: beige;
+}
+/* footer */
+.footer {
+  color: #000000;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+footer :hover {
+  color: aquamarine;
+}
+.alertLogin {
+  color: red;
+}
+#footer1 {
+  color: #000000;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 250px;
+}
